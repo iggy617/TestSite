@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather');
+
+.main_h {
+  position: fixed;
+  max-height: 100px;
+  z-index: 999;
+  width: 100%;
+  padding-top: 17px;
+  background: none;
+  overflow: hidden;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  opacity:0.6;
+  top: -1px;
+  padding-bottom: 6px;
+  font-family: "Montserrat", sans-serif;
+  background-color: ghostwhite;
+}
+@media only screen and (max-width: 766px) {
+  .main_h {
+    padding-top: 25px;
+  }
+}
+
+.open-nav {
+  max-height: 400px !important;
+}
+.open-nav .mobile-toggle {
+  transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+}
+
+.sticky {
+  background-color:black;
+  opacity: 1;
+  top: 0px;
+  border-bottom: 1px solid gainsboro;
+}
+
+.logo {
+  width: 100px;
+  font-size: 15px;
+  color: gold;
+  text-transform: uppercase;
+  float: left;
+  display: block;
+  margin-top: 0;
+  line-height: 1;
+  margin-bottom: 10px;    
+}
+
+.sec01 {
+    text-align: center;
+}
+
+.sec02 {}
+.sec03 {}
+.sec04 {}
+
+
+@media only screen and (max-width: 766px) {
+  .logo {
+    float: none;
+  }
+}
+
+nav {
+  float: right;
+  width: 60%;
+}
+@media only screen and (max-width: 766px) {
+  nav {
+    width: 100%;
+  }
+}
+nav ul {
+  list-style: none;
+  overflow: hidden;
+  text-align: right;
+  float: right;
+}
+@media only screen and (max-width: 766px) {
+  nav ul {
+    padding-top: 10px;
+    margin-bottom: 22px;
+    float: left;
+    text-align: center;
+    width: 100%;
+  }
+}
+nav ul li {
+  display: inline-block;
+  margin-left: 35px;
+  line-height: 1.5;
+}
+@media only screen and (max-width: 766px) {
+  nav ul li {
+    width: 100%;
+    padding: 7px 0;
+    margin: 0;
+  }
+}
+nav ul a {
+  color: #888888;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+nav ul a:hover {
+  color: gold;
+}
+
+.mobile-toggle {
+  display: none;
+  cursor: pointer;
+  font-size: 20px;
+  position: absolute;
+  right: 22px;
+  top: 0;
+  width: 30px;
+  -webkit-transition: all 200ms ease-in;
+  -moz-transition: all 200ms ease-in;
+  transition: all 200ms ease-in;
+}
+@media only screen and (max-width: 766px) {
+  .mobile-toggle {
+    display: block;
+  }
+}
+.mobile-toggle span {
+  width: 30px;
+  height: 4px;
+  margin-bottom: 6px;
+  border-radius: 1000px;
+  background: #8f8f8f;
+  display: block;
+}
+
+.row {
+  width: 100%;
+  max-width: 940px;
+  margin: 0 auto;
+  position: relative;
+  padding: 0 1%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: #8f8f8f;
+  background: whitesmoke;
+  font-family: "Cardo", serif;
+  font-weight: 300;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 30px;
+  line-height: 1.8;
+  font-family: 'Merriweather', serif;
+}
+
+h2 {
+  color: black;
+}
+
+p {
+  margin-bottom: 20px;
+  font-size: 20px;
+  line-height: 2;
+  color: black;
+}
+
+.content {
+  padding: 50px 2% 250px;
+  background-color:whitesmoke;
+}
+
+.content h1 {
+  text-align: center;
+}
+
+.content li {
+  padding-left: 100px;
+  font-size: 16px;
+  max-width: 700px;
+  margin-bottom:5px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.content li, content ul {
+  margin:0;
+  padding:0;
+  list-style-type: none;
+  text-align: left;
+}
+
+.hero {
+  position: relative;
+  background: url(https://roamulofied.files.wordpress.com/2015/10/0000.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  text-align: center;
+  color: #fff;
+  padding-top: 110px;
+  top:-8px;
+  min-height: 500px;
+  letter-spacing: 2px;
+  font-family: "Montserrat", sans-serif;
+}
+.hero h1 {
+  font-size: 50px;
+  line-height: 1.3;
+}
+.hero h1 span {
+  font-size: 25px;
+  color: gold;
+  border-bottom: 2px solid gold;
+  padding-bottom: 12px;
+  line-height: 3;
+}
+
+.mouse {
+  display: block;
+  margin: 0 auto;
+  left: 0px;
+  right: 0px;
+  top: 390px;
+  bottom: 0px;
+  width: 200px;
+  height: 60px;
+  background-color: #1a2c56;
+  transition: 1s;
+  position: absolute;
+  text-align: center;
+  line-height: 60px;
+  color: white;
+}
+
+.mouse a {
+  color: white;
+  text-decoration: none;
+}
+.mouse:hover {
+  background-color: gold;
+  transition: 0.5s;
+}
+
+@-webkit-keyframes scroll {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+    transform: translateY(20px);
+  }
+}
+@keyframes scroll {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+    -ms-transform: translateY(20px);
+    transform: translateY(20px);
+  }
+}
